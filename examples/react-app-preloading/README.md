@@ -13,5 +13,4 @@ I'll explain a litle about sample base on atlaskit-starter
 
 ### Before we use preloading
 
-![Before](https://github.com/uixcrazy/webpack-started/tree/master/examples/react-app-preloading/docs/images/before_use_react-loadable.png)
-
+![Before](https://github.com/uixcrazy/webpack-started/blob/master/examples/react-app-preloading/docs/images/before_use_react-loadable.png)
