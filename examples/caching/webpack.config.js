@@ -1,14 +1,21 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: {
-    index: './src/index.js'
-  },
+  entry: './src/index.js',
   output: {
-    chunkFilename: '[name].bundle.js',
+    // chunkFilename: '[name].bundle.js',
+    filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+      new HtmlWebpackPlugin({
+       title: 'Caching'
+      })
+  ],
   module: {
     rules: [
       {
